@@ -1,0 +1,52 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--margin {
+    &-all {
+      margin: 1rem;
+    }
+
+    &-top {
+      margin-top: 1rem;
+    }
+
+    &-bottom {
+      margin-bottom: 1rem;
+    }
+
+    &-left {
+      margin-left: 1rem;
+    }
+
+    &-right {
+      margin-right: 1rem;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+
+    @for $i from 0 through 20 {
+      $width: $i * 5;
+      &--#{$width} {
+        flex: 0 0 #{$width + '%'};
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__item {
+      @for $i from 0 through 20 {
+        $width: $i * 5;
+        &--#{$width} {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+
+  &--flex {
+    gap: 0.5rem;
+  }
+}

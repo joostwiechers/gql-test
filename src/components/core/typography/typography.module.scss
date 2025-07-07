@@ -1,0 +1,41 @@
+@use '@styling/variables' as theme;
+
+.typography {
+  font-size: 1rem;
+  text-align: left;
+
+  &--wysiwyg {
+    white-space: pre-line;
+  }
+
+  &--weight {
+    &-bold {
+      font-weight: bold;
+    }
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+
+  &--align {
+    &-left {
+      text-align: left;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &-right {
+      text-align: right;
+    }
+  }
+
+  // Font sizes
+  @each $key, $value in theme.$fontSizes {
+    &--size-#{'' + $key} {
+      font-size: $value;
+    }
+  }
+}

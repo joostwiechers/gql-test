@@ -1,0 +1,136 @@
+@import url(https://fonts.bunny.net/css?family=atkinson-hyperlegible:400);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  font-family:
+    'Atkinson Hyperlegible',
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui;
+  font-size: 16px;
+}
+
+hr {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--main-color);
+  background: var(--main-background-color);
+  font-size: 1rem;
+}
+
+a {
+  color: var(--main-color);
+}
+
+main {
+  margin: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  display: block;
+}
+
+ol,
+ul {
+  padding-left: 1.2rem;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+label {
+  display: block;
+  width: 100%;
+
+  input[type='text'],
+  input[type='number'],
+  textarea {
+    resize: vertical;
+    font-size: 1rem;
+    border: 0;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+    background-color: var(--card-background);
+    border-radius: var(--default-border-radius);
+    padding: 0 1rem;
+    line-height: 3rem;
+  }
+}
+
+input[type='text'],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  position: static !important;
+  width: auto !important;
+  white-space: normal !important;
+}
+
+// CK overrides.
+.ck-toolbar {
+  border: 0 !important;
+}
+
+.ck {
+  border: 0 !important;
+  color: var(--main-color) !important;
+  background: var(--card-background) !important;
+  border-radius: var(--default-border-radius) !important;
+  box-shadow: none !important;
+}

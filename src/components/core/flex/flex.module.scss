@@ -1,0 +1,82 @@
+@use '../../../styling/variables' as *;
+
+.flex {
+  display: flex;
+
+  &--align-items {
+    &-center {
+      align-items: center;
+    }
+
+    &-end {
+      align-items: flex-end;
+    }
+
+    &-start {
+      align-items: flex-start;
+    }
+  }
+
+  &--align-self {
+    &-center {
+      align-self: center;
+    }
+
+    &-end {
+      align-self: flex-end;
+    }
+
+    &-start {
+      align-self: flex-start;
+    }
+  }
+
+  &--justify-content {
+    &-center {
+      justify-content: center;
+    }
+
+    &-between {
+      justify-content: space-between;
+      inline-size: 100%;
+    }
+
+    &-start {
+      justify-content: flex-start;
+    }
+
+    &-end {
+      justify-content: flex-end;
+    }
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--grow {
+    flex-grow: 1;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--mobile-column {
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  @each $key, $value in $spacings {
+    &--gap-#{$key} {
+      gap: $value;
+    }
+  }
+
+  @each $key, $value in $spacings {
+    &--spacing-#{$key} {
+      padding-block: $value;
+    }
+  }
+}

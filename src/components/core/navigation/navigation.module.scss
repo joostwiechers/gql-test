@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 1rem;
+  background: var(--dark);
+  gap: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

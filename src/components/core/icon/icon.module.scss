@@ -1,0 +1,28 @@
+.icon {
+  display: block;
+  max-height: 100%;
+  filter: invert(1);
+  background: 0;
+
+  &--spins {
+    animation: spin 1.5s linear infinite;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

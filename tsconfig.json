@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es2015",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "paths": {
+      "@api": [
+        "src/api"
+      ],
+      "@assets": [
+        "src/assets"
+      ],
+      "@common": [
+        "src/common"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@stores": [
+        "src/stores"
+      ],
+      "@styling": [
+        "src/styling"
+      ],
+      "@typings": [
+        "src/typings"
+      ],
+      "@views": [
+        "src/views"
+      ]
+    }
+  }
+}
