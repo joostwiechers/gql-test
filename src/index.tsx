@@ -8,7 +8,7 @@ import { App } from './app'
 import './style.scss'
 
 const client = new ApolloClient({
-  uri: 'https://countries.trevorblades.com/graphql',
+  uri: 'https://graphql.pokeapi.co/v1beta2',
   cache: new InMemoryCache(),
 })
 

@@ -11,13 +11,24 @@ interface ICheckbox {
   name?: string
   checked?: boolean
   value: string
+  disabled?: boolean
 
   [x: string]: any
 }
 
 export const Checkbox = forwardRef(
   (
-    { defaultChecked, onChange, id, label, name, checked, value, props }: ICheckbox,
+    {
+      defaultChecked,
+      onChange,
+      id,
+      label,
+      name,
+      checked,
+      value,
+      disabled,
+      props,
+    }: ICheckbox,
     ref
   ) => {
     return (
@@ -31,6 +42,7 @@ export const Checkbox = forwardRef(
           onChange={(event) => onChange && onChange(event)}
           ref={ref}
           value={value}
+          disabled={disabled}
           {...props}
         />
         {label}

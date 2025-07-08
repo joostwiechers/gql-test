@@ -1,2 +1,2 @@
-export { Countries } from './countries/countries'
-export { Country } from './country/country'
+export { ContentCard } from './content-card/content-card'
+export { Pokemon } from './pokemon/pokemon'

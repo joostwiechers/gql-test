@@ -1,11 +1,9 @@
 import * as React from 'react'
 
-import { CountriesView, CountryView } from '@views'
+import { HomeView } from '../views/home/home.views'
 
 export const ROUTE_PATHS = {
   HOME: '/',
-  COUNTRY_SEARCH: '/countries',
-  COUNTRY_SINGLE: '/countries/:id',
 }
 
 export const ROUTE_PATHS_DYNAMIC = {
@@ -14,19 +12,7 @@ export const ROUTE_PATHS_DYNAMIC = {
 
 export const ROUTES = [
   {
-    path: ROUTE_PATHS.COUNTRY_SINGLE,
-    element: <CountryView />,
-  },
-  {
-    path: ROUTE_PATHS.COUNTRY_SEARCH,
-    element: <CountryView />,
-  },
-  {
-    path: ROUTE_PATHS.HOME,
-    element: <CountriesView />,
-  },
-  {
     path: '*',
-    element: <CountriesView />,
+    element: <HomeView />,
   },
 ]

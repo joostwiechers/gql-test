@@ -1,9 +1,8 @@
 import React from 'react'
 
 import { Navigation, Router } from '@components'
-
-import { NAVIGATION_MAIN } from './constants/navigation.constants'
-import { ROUTES } from './constants/routes.constants'
+import { NAVIGATION_MAIN } from '@constants'
+import { ROUTES } from '@constants'
 
 export const App = () => {
   return (
